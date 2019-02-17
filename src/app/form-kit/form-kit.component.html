@@ -1,15 +1,15 @@
-<form [formGroup]="formGroup">
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit(formGroup)">
   <div>
     <input
     type="text"
-    [formControl]="firstName"
+    formControlName="firstName"
     placeholder="first name"
     >
   </div>
   <div>
     <input
     type="text"
-    [formControl]="lastName"
+    formControlName="lastName"
     placeholder="last name"
     >
   </div>
