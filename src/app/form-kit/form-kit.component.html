@@ -1,3 +1,17 @@
-<p>
-  form-kit works!
-</p>
+<form [formGroup]="formGroup">
+  <div>
+    <input
+    type="text"
+    [formControl]="firstName"
+    placeholder="first name"
+    >
+  </div>
+  <div>
+    <input
+    type="text"
+    [formControl]="lastName"
+    placeholder="last name"
+    >
+  </div>
+  <button>Submit</button>
+</form>
